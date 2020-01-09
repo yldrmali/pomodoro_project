@@ -86,7 +86,7 @@ function countdown() {
             }
             updateDisplay();
             timer.avoidRepeat = false
-        }, 1);
+        }, 1000);
     }
 }
 
