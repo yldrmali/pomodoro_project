@@ -47,7 +47,6 @@ if (tempSession !== sessionMin && timer.status === "Session") {
 
 //play-stop button current situation
 playbtn.addEventListener("click", ()=>{
-    console.log(playbtn.classList);
     (!playbtn.classList.contains("stopped")) ? stop(): start();
 });
 stopbtn.addEventListener("click",()=>{
