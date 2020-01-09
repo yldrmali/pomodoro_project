@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/style.css" type="text/css" rel="stylesheet">
+    <title>Pomodoro Timer</title>
+</head>
+
+<body>
+    
+    <div class="container">
+     <div class="play btn paused">
+         <img id="playbtn" src="style/icons/play.svg" alt="">
+         <img id="pausebtn" src="style/icons/pause.svg" style="visibility: hidden;" alt="">
+
+    </div>
+        <div class="current-state"></div>
+        <div class="reset btn">
+            <img src="style/icons/reset.svg"></img>
+        </div>
+        <div class="time"></div>
+    </div>
+    <div class="setting_container">
+        <div class="manageTime">
+            <div class="session_minus btn">></div>
+            <div class="session">SESSION</div>
+            <div class="work-time"></div>
+            <div class="session_plus btn">></div>
+            <div class="break_minus btn">></div>
+            <div class="break">BREAK</div>
+            <div class="break-time"></div>
+            <div class="break_plus btn">></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

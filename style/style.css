@@ -1,0 +1,162 @@
+
+
+html {
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'digital';
+    src: url('digital-7.ttf');
+}
+
+body {
+    font-family: 'digital';
+}
+
+.btn {
+    cursor: pointer;
+}
+/* Increase and Decrease Session and Break*/
+.manageTime {
+    display: grid;
+    grid-template-columns: 1fr 3fr repeat(2, 1fr) 3fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+}
+
+    .session_minus { grid-area: 2 / 1 / 3 / 2;}
+    .session { grid-area: 1 / 2 / 2 / 3;}
+    .work-time { grid-area: 2 / 2 / 3 / 3;}
+    .session_plus { grid-area: 2 / 3 / 3 / 4;}
+    .break_minus {    grid-area: 2 / 4 / 3 / 5;}
+    .break { grid-area: 1 / 5 / 2 / 6;}
+    .break-time { grid-area: 2 / 5 / 3 / 6;}
+    .break_plus { grid-area: 2 / 6 / 3 / 7;}
+
+/* Display time, play-pause, reset button and current situation*/
+/* Homepage Buttons */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .play.btn.paused{ grid-area: 1 / 1 / 2 / 2;}
+    .current-state { grid-area: 1 / 2 / 2 / 3; }
+    .reset.btn { grid-area: 1 / 3 / 2 / 4; }
+    .time { grid-area: 2 / 1 / 3 / 4; }
+
+/*------------------------------------*/
+
+
+
+
+
+
+
+
+
+.play,
+.reset,
+.time,
+.current-state {
+    opacity: 0.65;
+}
+
+.play:hover,
+.reset:hover {
+    opacity: 1;
+}
+.play{
+    margin: auto;
+}
+
+.play img:nth-child(1) {
+}
+
+.play img:nth-child(2) {
+    background-position: left;
+ 
+}
+
+.reset{
+    margin: auto;
+}
+
+.reset img {
+ display: block;
+transition: all 0.4s ease;
+}
+
+.reset img:hover {
+     transform:rotate(60deg);
+  }
+
+/* Timer container */
+
+.container{
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    border-bottom: 3px solid #151513A6;
+}
+
+/* Homepage Content */
+.setting_container {
+    margin: 5% auto;
+    width: 300px;
+    top: 50vh;
+    left: 40vw;
+    text-align: center;
+    font-size: 30px;
+}
+
+.current-state {
+    display: inline-block;
+    font-size: 3em;
+    align-self: center;
+    
+    
+}
+
+.time {
+    font-family: 'digital';
+    font-size: 12em;
+}
+
+/* setting_container Items */
+
+.session_plus,
+.break_plus,
+.session_minus,
+.break_minus,
+.work-time,
+.break-time,
+.session,
+.break {
+    opacity: 0.65;
+}
+
+.session_plus:hover,
+.break_plus:hover,
+.session_minus:hover,
+.break_minus:hover {
+    opacity: 0.83;
+}
+
+
+.session_minus,
+.break_minus {
+    transform: rotate(90deg);
+}
+
+.session_plus,
+.break_plus {
+    transform: rotate(-90deg);
+}
+
+
+
